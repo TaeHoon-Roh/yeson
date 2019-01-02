@@ -12,6 +12,12 @@ public class WebController {
 
     private PostsService postsService;
     @GetMapping("/")
+    public String root(){
+        return "root";
+    }
+
+
+    @GetMapping("/index")
     public String index(){
         return "index";
     }
